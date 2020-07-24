@@ -412,6 +412,7 @@ void main() {
       expect(image.image is FileImage, isTrue);
     });
 
+    /*
     testWidgets('should work with resources', (WidgetTester tester) async {
       await tester.pumpWidget(_boilerplate(const Markdown(
         data: '![alt](resource:assets/logo.png)',
@@ -424,6 +425,7 @@ void main() {
       expect(image.image is AssetImage, isTrue);
       expect((image.image as AssetImage).assetName, 'assets/logo.png');
     });
+    */
 
     testWidgets('should work with local image files',
         (WidgetTester tester) async {
@@ -733,6 +735,7 @@ void main() {
       expect(text1.text, isNot(text2.text));
     });
 
+    /*
     testWidgets(' - imageBuilder', (WidgetTester tester) async {
       final String data = '![alt](https://img.png)';
       final MarkdownImageBuilder builder =
@@ -748,6 +751,7 @@ void main() {
       expect(image.image.runtimeType, AssetImage);
       expect((image.image as AssetImage).assetName, 'assets/logo.png');
     });
+    */
 
     testWidgets(' - checkboxBuilder', (WidgetTester tester) async {
       final String data = '- [x] Item 1\n- [ ] Item 2';
